@@ -138,6 +138,7 @@ android {
         versionCode 1
         versionName "1.0"
 
+        // Add to Detox
         testBuildType System.getProperty('testBuildType', 'debug')
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
