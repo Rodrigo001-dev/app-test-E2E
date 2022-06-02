@@ -35,6 +35,8 @@ describe('My first suite tests E2E', () => {
     // delay
     await new Promise((r) => setTimeout(r, 5000)); // 5000 => 5ms
 
+    // tirando uma screenShot da tela
+    await device.takeScreenshot('snapshot-premium-plan-test');
     // estou esperando que o elemento que selecionei seja visível na tela
     await expect(element(by.id('confirmation-message'))).toBeVisible();
   });
